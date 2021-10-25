@@ -1,0 +1,119 @@
+.duck {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 300px;
+  height: 300px;
+  background: rgb(100, 211, 255);
+}
+
+.duck-top {
+  top: 10%;
+  left: 20%;
+  background: yellow;
+  width: 40%;
+  height: 40%;
+  border-radius: 70% 70% 70% 70%;
+}
+.duck-bottom {
+  top: 40%;
+  left: 16%;
+  background: yellow;
+  width: 63%;
+  height: 45%;
+  border-radius: 70% 20% 70% 70%;
+}
+
+.wing {
+  top: 25%;
+  left: 40%;
+  background: orange;
+  width: 63%;
+  height: 55%;
+  border-radius: 80% 15% 110% 70%;
+}
+.wing-color {
+  top: -6%;
+  left: 0%;
+  background: yellow;
+  width: 100%;
+  height: 100%;
+  border-radius: 80% 15% 110% 70%;
+}
+.right-eye {
+  top: 40%;
+  left: 65%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+.left-eye {
+  top: 40%;
+  left: 20%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.eyelid {
+    top: 100%;
+  left: 0%;
+  background: yellow;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+    animation-duration: 3s;
+    animation-name: smile;
+    animation-iteration-count: infinite;
+    transform-origin: 0% 0%;
+}
+@keyframes smile {
+    0%   {top: 100%;}
+    50% {top: 20%; left: -8%; width: 120%;}
+    }
+
+.sparkle {
+  top: 25%;
+  left: 15%;
+  background: white;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+.beak-top {
+  top: 58%;
+  left: 20%;
+  background: orange;
+  width: 60%;
+  height: 20%;
+  border-radius: 50%;
+}
+
+.beak-bottom {
+  top: 70%;
+  left: 30%;
+  background: orange;
+  width: 40%;
+  height: 12%;
+  border-radius: 50%;
+  animation-duration: 3s;
+  animation-name: mouth;
+  animation-iteration-count: infinite;
+  transform-origin: 0% 0%;
+}
+
+@keyframes mouth {
+    0%   {top: 70%;}
+    50% {top: 72%; left: 20%; width: 60%; height: 25;}
+    }
+
+body {
+  background: white;
+}
+.duck * {
+  position: absolute;
+}

@@ -68,10 +68,13 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+
+.duck:hover .eyelid {
   /*animation specifics of that bodypart*/
   animation-duration: 3s;
   animation-name: smile;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   transform-origin: 0% 0%;
 }
 /*animation*/
@@ -111,9 +114,12 @@
   width: 40%;
   height: 12%;
   border-radius: 50%;
+}
+
+.duck:hover .beak-bottom {
   animation-duration: 3s;
   animation-name: mouth;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   transform-origin: 0% 0%;
 }
 

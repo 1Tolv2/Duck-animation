@@ -11,8 +11,8 @@
 
 .duck-top {
   /*placement in the box of that bodypart*/
-  top: 10%;
-  left: 20%;
+  top: 15%;
+  left: 15%;
   background: yellow;
   /*size and shape of that bodypart*/
   width: 40%;
@@ -20,8 +20,8 @@
   border-radius: 70% 70% 70% 70%;
 }
 .duck-bottom {
-  top: 40%;
-  left: 16%;
+  top: 45%;
+  left: 11%;
   background: yellow;
   width: 63%;
   height: 45%;
@@ -139,7 +139,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: white;
   top: 5%;
-  left: 56%;
+  left: 52%;
   background: white;
   width: 43%;
   height: 20%;

@@ -135,6 +135,22 @@
   }
 }
 
+.text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+  top: 5%;
+  left: 56%;
+  background: white;
+  width: 43%;
+  height: 20%;
+  border-radius: 50%;
+}
+
+p {
+  padding-left: 11px;
+  padding-top: 2px;
+}
+
 body {
   background: white;
 }

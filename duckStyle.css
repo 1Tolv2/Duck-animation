@@ -28,7 +28,7 @@
   border-radius: 70% 20% 70% 70%;
 }
 
-.wing {
+.right-wing {
   top: 25%;
   left: 40%;
   background: orange;
@@ -36,7 +36,8 @@
   height: 55%;
   border-radius: 80% 15% 110% 70%;
 }
-.wing-color {
+
+.right-wing-color {
   top: -6%;
   left: 0%;
   background: yellow;
@@ -44,6 +45,90 @@
   height: 100%;
   border-radius: 80% 15% 110% 70%;
 }
+.duck:hover .right-wing-color {
+  animation-duration: 3s;
+  animation-name: rightwave;
+  animation-iteration-count: 1;
+  transform-origin: 0% 0%;
+  animation-timing-function: linear;
+}
+
+@keyframes rightwave {
+  10% {
+    transform: top;
+  }
+  20% {
+    transform: rotate(-3deg);
+    height: 95%;
+  }
+  30%,
+  50% {
+    transform: rotate(0deg);
+    width: 102%;
+    height: 102%;
+    border-radius: 80% 30% 300% 180%;
+  }
+  40%,
+  60% {
+    transform: rotate(-3deg);
+    height: 90%;
+    width: 102%;
+    border-radius: 90% 30% 170% 130%;
+  }
+  68% {
+    top: -6%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 80% 15% 110% 70%;
+  }
+}
+
+.left-wing {
+  top: 15%;
+  left: 1%;
+  background: yellow;
+  width: 63%;
+  height: 55%;
+  border-radius: 110% 15% 110% 80%;
+}
+
+.duck:hover .left-wing {
+  animation-duration: 3s;
+  animation-name: leftwave;
+  animation-iteration-count: 1;
+  transform-origin: 0% 0%;
+  animation-timing-function: linear;
+}
+
+@keyframes leftwave {
+
+  10% {
+    transform: top(-10%);
+    left: -4%;
+    height: 55%;
+    border-radius: 120% 15% 110% 40%;
+  }
+  20%,
+  40%, 60% {
+    left: -6%;
+    height: 45%;
+  }
+  30%,
+  50% {
+    left: -4%;
+    height: 55%;
+  }
+  68% {
+    top: 20%;
+  left: 1%;
+  background: yellow;
+  width: 63%;
+  height: 60%;
+  border-radius: 110% 15% 110% 80%;
+  }
+}
+
 .right-eye {
   top: 40%;
   left: 65%;

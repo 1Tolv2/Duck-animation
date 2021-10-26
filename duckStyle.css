@@ -1,3 +1,4 @@
+/*the box that contains the duck*/
 .duck {
   position: relative;
   margin: auto;
@@ -9,9 +10,11 @@
 }
 
 .duck-top {
+  /*placement in the box of that bodypart*/
   top: 10%;
   left: 20%;
   background: yellow;
+  /*size and shape of that bodypart*/
   width: 40%;
   height: 40%;
   border-radius: 70% 70% 70% 70%;
@@ -59,21 +62,29 @@
 }
 
 .eyelid {
-    top: 100%;
+  top: 100%;
   left: 0%;
   background: yellow;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-    animation-duration: 3s;
-    animation-name: smile;
-    animation-iteration-count: infinite;
-    transform-origin: 0% 0%;
+  /*animation specifics of that bodypart*/
+  animation-duration: 3s;
+  animation-name: smile;
+  animation-iteration-count: infinite;
+  transform-origin: 0% 0%;
 }
+/*animation*/
 @keyframes smile {
-    0%   {top: 100%;}
-    50% {top: 20%; left: -8%; width: 120%;}
-    }
+  0% {
+    top: 100%;
+  }
+  50% {
+    top: 20%;
+    left: -8%;
+    width: 120%;
+  }
+}
 
 .sparkle {
   top: 25%;
@@ -107,9 +118,16 @@
 }
 
 @keyframes mouth {
-    0%   {top: 70%;}
-    50% {top: 72%; left: 20%; width: 60%; height: 25;}
-    }
+  0% {
+    top: 70%;
+  }
+  50% {
+    top: 72%;
+    left: 20%;
+    width: 60%;
+    height: 25;
+  }
+}
 
 body {
   background: white;
